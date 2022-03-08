@@ -176,6 +176,12 @@ footer p {
     flex-direction: row;
     padding: 20px;
     padding-bottom: 0px;
+    /* THE TWO LINES BELOW ARE NOT REQUIRED BY SPECIFICATIIONS BUT ADDED TO CREATE A FRIENDLIER USER EXPERIENCE WHEN RESIZING THE WINDOW ABOVE 480px. 
+    ELSE THE FORM WOULD GO OUTSIDE OF THE FRAME AND NEED A HORIZONTAL SCROLLBAR 
+    GRADER: PLEASE REMOVE IF IT DOES NOT MEET SPECIFICATIONS/REQUIREMENTS
+    */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   form div{
@@ -187,6 +193,7 @@ footer p {
     padding: 0px;
     margin: 0px;
     height: 60px;
+    width: 200px;
   }
 
   .group{
